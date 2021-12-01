@@ -11,6 +11,7 @@ contract DumplingPeer2PeerTradeV1 is Ownable {
         uint256 tokenId,
         address acceptor,
         uint256 royalty,
+        address artistAddress,
         uint256 donation,
         uint256 durationInSec
     ) public returns (uint256/* trade ID */) {
