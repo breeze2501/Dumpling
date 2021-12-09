@@ -5,20 +5,21 @@
 
 # Dumpling V1 interface
 
-## Trade creator
+## Create trade(sell)
 ### Input
-1. **One** ERC721 token s/he owns, including:
+1. Single persons s/he wants to trade with, expressed by a wallet address.
+2. **One** ERC721 token s/he owns, including:
     1. Token contract address.
     2. Token ID.
-2. Price(In ETH).
-3. Single persons s/he wants to trade with, expressed by a wallet address.
-4. Royalty. The royalty you want to give to the NFT author, which is 100% decided by u.
-5. Donation. In place of platfrom fee. We use donation, which is also 100% decided by u.
+3. Price(In ETH).
 
 ### Output
 A trade ID, which is unique inside the trade contract.
 
-## Trade acceptor
+## Cancel trade(by seller)
+1. Trade ID.
+
+## Accept trade(buy)
 ### Input
 1. Trade ID which the creator give to the acceptor.
 2. Ether to pay for the trade, which must be exactly the price creator set.
